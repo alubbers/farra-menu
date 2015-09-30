@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv='Content-type' content='text/html; charset=utf-8'>
+    <title>Basic Example with JSX</title>
+    <link rel="stylesheet" href="shared/css/base.css" />
+  </head>
+  <body>
+    <div id="container">
+      <p>
+        To install React, follow the instructions on
+        <a href="https://github.com/facebook/react/">GitHub</a>.
+      </p>
+      <p>
+        If you can see this, React is not working right.
+        If you checked out the source from GitHub make sure to run <code>grunt</code>.
+      </p>
+    </div>
+    <script src="shared/react.js"></script>
+    <script src="shared/JSXTransformer.js"></script>
+    <script src="shared/thirdparty/jquery.min.js"></script>
+    <script src="menu.jsx" type="text/jsx"></script>
+    <script src="data.js"></script>
+    <script type="text/jsx">
+      var MainApplication = React.createClass({
+        render: function() {
+          return (
+            <Menu data={menuData} name={name} />
+          );
+        }
+      });
+
+      React.render(
+          <MainApplication />,
+          document.getElementById('container')
+        );
+    </script>
+  </body>
+</html>
