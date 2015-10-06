@@ -1,0 +1,20 @@
+.salads header h1 {
+  border-bottom: 0px;
+  font-size: 1.5em;
+}
+
+.salads header h2 {
+  font-style: italic;
+  font-size: 1.1em;
+}
+
+.salads footer {
+  font-style: italic;
+  font-size: 0.8em;
+}
+
+.salad {
+  background-color: #AAFFAA;
+  margin: 2px;
+  padding: 0px 10px 0px 10px;
+}
